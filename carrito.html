@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mi Tienda Online</h1>
+            <p>Los mejores productos a precios increíbles</p>
+        </header>
+        
+        <div class="productos">
+            <div class="producto">
+
+                <h3>Zapatillas Deportivas</h3>
+                <p>Zapatillas cómodas para correr y hacer ejercicio</p>
+                <span class="precio" id="precio-1">$45.00</span>
+                <button class="btn-agregar" onclick="agregarAlCarrito(1, 'Zapatillas Deportivas', 45)">Agregar al carrito</button>
+            </div>
+            
+            <div class="producto">
+
+                <h3>Auriculares Bluetooth</h3>
+                <p>Sonido de alta calidad con cancelación de ruido</p>
+                <span class="precio" id="precio-2">$25.00</span>
+                <button class="btn-agregar" onclick="agregarAlCarrito(2, 'Auriculares Bluetooth', 25)">Agregar al carrito</button>
+            </div>
+            
+            <div class="producto">
+
+                <h3>Smartwatch</h3>
+                <p>Reloj inteligente con monitor de actividad y notificaciones</p>
+                <span class="precio" id="precio-3">$80.00</span>
+                <button class="btn-agregar" onclick="agregarAlCarrito(3, 'Smartwatch', 80)">Agregar al carrito</button>
+            </div>
+        </div>
+        
+        <div class="carrito">
+            <h2>Tu Carrito de Compras</h2>
+            
+            <div class="resumen">
+                <div class="resumen-item">
+                    <h3>Items en el carrito</h3>
+                    <span id="total-items">0</span>
+                </div>
+                
+                <div class="resumen-item">
+                    <h3>Total a pagar</h3>
+                    <span id="total-precio">$0.00</span>
+                </div>
+            </div>
+            
+            <div class="mensaje-envio" id="mensaje-envio">
+                ¡Felicidades! Has obtenido envío gratis por tu compra superior a $50.
+            </div>
+            
+            <div class="acciones">
+                <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

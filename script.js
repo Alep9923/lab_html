@@ -2,9 +2,6 @@ const votosWeb = document.getElementById("votos_Web");
 const votosJS = document.getElementById("votos_JavaScript");
 const votosData = document.getElementById("votos_Data");
 
-const alerta = document.getElementById("Alerta")
-const alert = document.getElementById("")
-
 const botonWeb = document.getElementById("Web");
 const botonJS = document.getElementById("JavaScript");
 const botonData = document.getElementById("Data");
@@ -34,6 +31,9 @@ botonData.addEventListener("click", function() {
     votosData.textContent = `Votos Database: ${contadorData}`;
 });
 
-console.log(document.getElementById("votos_Data"));
-console.log(document.getElementById("votos_JavaScript"));
-console.log(document.getElementById("votos_Web"));
+contadorData();
+contadorJS();
+contadorWeb();
+
+
+
